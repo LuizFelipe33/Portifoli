@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link href="jquery-3.6.0.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfólio</title>
+    
+
+</head>
+<body>
+    <nav id="navegation">
+        <ul>
+            <li class="list active">
+                <a href="#h">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="Text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#p">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="Text">Profile</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#lingua">
+                    <span class="icon">
+                        <ion-icon name="code-outline"></ion-icon>
+                    </span>
+                    <span class="Text">Knowledge</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#c">
+                    <span class="icon">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                    </span>
+                    <span class="Text">About</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>  
+    </nav>
+    <section id="h">
+        <h1 id="h1h">Hi,</h1>   
+        <h1 id="h2h">i'm Luiz,</h1>
+        <h1 id="h3h">a developer.</h1>
+    </section>
+    <div>
+        <video autoplay muted loop id="myVideo">
+            <source src="img/video (1).mp4" type="">
+        </video>
+    </div>
+    <script>
+        function typeWriter(elemento){
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML = '',
+        textoArray.forEach((letra, i) =>{
+            setTimeout(function(){
+                elemento.innerHTML += letra;
+            }, 100 * i)
+        });
+        }
+        const ola = document.querySelector('#h1h');
+        typeWriter(ola);
+        const ola1 = document.querySelector('#h2h');
+        typeWriter(ola1);
+        const ola2 = document.querySelector('#h3h');
+        typeWriter(ola2);
+
+    </script>
+    
+    <section id="p">
+        <div id="fotoeu">
+            <img src="img/eu.png" alt="">
+        </div> 
+        <h2 id="tituloeu">Luiz Felipe</h2>
+        <span id="aspas">❝</span>
+        <p id="textoeu">Olá, me chamo Luiz Felipe. Tenho 18 anos. <br>
+        Estou no quinto período de Análise e Desenvolvimento de Sistemas, <br>
+        no IFPE, com previsão de formação para janeiro de 2023. Amo estudar <br>
+        coisas novos e abranger várias áreas do conhecimento. Estou a procura <br>
+        de uma oportunidade profissional, para por em prática meus <br>
+        conhecimentos adquiridos no decorrer do curso. </p>
+        <span id="aspas2">❞</span>
+        <div id="giff">  
+            <img src="img/giphy.gif" alt=""> 
+        </div>
+        <div id="lingua">
+            <h2 id="conhe">Conhecimentos:</h2>
+
+            <ul>
+
+                <li><img src="img/icons8-javascript-96.png" alt=""></li>
+                    <ul id="lidentro">
+                        <li><img src="img/icons8-node-js-48.png" alt=""></li>
+                        <li><img src="img/icons8-reagir-40.png" alt=""></li>
+                    </ul>
+                <li><img src="img/icons8-python-96.png" alt=""></li>
+                    <ul id="lidentro2">
+                        <li><img src="img/icons8-django-48.png" alt=""></li> 
+                    </ul>
+                <li><img src="img/icons8-html-5-96.png" alt=""></li>
+                <li><img src="img/icons8-css3-96.png" alt=""></li>
+                <li><img src="img/icons8-logo-java-coffee-cup-96.png" alt=""></li>
+                <li><img src="img/icons8-logo-mysql-96.png" alt=""></li>
+            </ul>
+        </div> 
+
+        <article>
+            <span class="linha st0"></span>
+            <span class="linha st1"></span>
+            <span class="linha st2"></span>
+            <span class="linha st3"></span>
+        </article>
+        <div>
+            <ul id="contato">
+                <a href="https://github.com/LuizFelipe33" target="_blank"><li><img src="img/icons8-github-96.png" alt=""></li></a>
+                <a href="https://www.linkedin.com/in/luiz-rodrigues-05071/" target="_blank"><li><img src="img/icons8-linkedin-96.png" alt=""></li></a>
+            </ul>
+        </div>
+    </section>  
+
+        <div id="zoom">
+            <img src="img/Cv- Luiz Felipe.png" id="img-responsive" width="350" height="500">   
+        </div>
+
+    <div data-interval="2000"id="carouselExampleSlidesOnly" class="carouselslide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img  src="img/udemy.png" width="400" height="250"alt="First slide">
+          </div>
+          <div data-interval="20000"class="carousel-item">
+            <img  src="img/4246F596-1.png" width="400" height="250"alt="Second slide">
+          </div>
+          <div data-interval="2000"class="carousel-item">
+            <img src="img/7009D880-1.png" width="400" height="250"alt="Third slide">
+          </div>
+          <div data-interval="2000"class="carousel-item">
+            <img src="img/7727692E-1.png" width="400" height="250"alt="Third slide">
+          </div>
+          <div data-interval="2000"class="carousel-item">
+            <img src="img/BC100CBB-1.png" width="400" height="250"alt="Third slide">
+          </div>
+        </div>
+      </div>
+    <script src="js/script.js"></script>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) => item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) => item.addEventListener('click',activeLink));
+    </script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+</body>
+</html>

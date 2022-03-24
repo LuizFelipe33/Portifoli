@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap%27');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(#0e180f,#000701);
+    height: 3700px;
+}
+#myVideo {
+    display: flex;
+    width: 100%;
+    z-index: 1001;
+}
+
+#navegation{
+    position: fixed;
+    width: 400px;
+    display: flex;
+    top: 50px;
+    left: 800px;
+    justify-content: center;
+    background-color: #142e0d;
+    border-radius: 10px;
+    align-items: center;
+    z-index: 1001;
+}
+#navegation ul{
+    width: 400px;
+    display: flex;
+}
+#navegation ul li{
+    position: relative;
+    list-style: none;
+    width: 100px;
+    height: 70px;
+    z-index: 10px;
+}
+#navegation ul li a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+#navegation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0,3s;
+    color: #09ca03;
+}
+#navegation ul li.active a .icon{
+    transform: translateY(-20px);
+}
+
+#navegation ul li a .Text{
+    position: absolute;
+    color: #09ca03;
+    top: 30px;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+#navegation ul li.active a .Text{
+    opacity: 1;
+    transform: translateY(1px);
+}
+#h{
+    position: absolute;
+    color: #fff;
+    left: 200px;
+    top: 250px;
+    font-size: 30px;
+}
+#p #fotoeu{
+    position: absolute;
+    color: #fff;
+    left: -170px;
+    top: -100;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+#p{ 
+    position: absolute;
+    color: #fff;
+    left: 100px;
+    top: 750px;
+    font-size: 30px;
+    border-radius: 50%;
+    z-index: -10;
+}
+#aspas{
+    position: relative;
+    font-size: 100px;
+    color: #09ca03;
+    left: 300px;
+    top: 80px;
+}
+#aspas2{
+    position: relative;
+    font-size: 100px;
+    color: #09ca03;
+    left: 950px;
+    top: -30px;
+}
+#textoeu{
+    padding: 20px;
+    position: relative;
+    font-size: 17px;
+    left: 350px;
+    top: 20px;
+}
+#conhe{
+    position:relative;
+    top: -200px;
+    left: -130px;
+}
+
+#lingua{
+    padding: 200px;
+    position: relative;
+    font-size: 17px;
+    top: 100px;
+    left: -47px;  
+}
+#lingua ul li{
+    flex-direction: column;
+    position: relative;
+    top: -150px;
+    left: -200px;
+    padding: 70px;
+    display: block;
+    font-size: 30px;
+    height: 10px;
+}
+
+#lidentro{
+    position: relative;
+    display: inline-block;
+    padding: 1px;
+    display: flex;
+    height: 20px;
+    top: -85px;
+    left: 200px;
+}
+#lidentro2{
+    position: relative;
+    left: 200px;
+    top: -100px;
+    height: 20px;
+    padding: 1px;
+}
+#giff{
+    position: relative;
+    left: 370px;
+    top: -50px;
+}
+#contato{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    width: 1000px;
+    top: 3000px;
+    justify-content: center;
+}
+#contato ul li{
+    position: relative;
+    padding: 100px;
+    display: flex;
+
+}
+#img-responsive{
+    position: absolute;
+    top: 2900px;
+    left: 100px;
+}
+#zoom {
+	overflow: hidden;
+}
+
+#zoom img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#zoom:hover img {
+	-moz-transform: scale(1.6);
+	-webkit-transform: scale(1.6);
+	transform: scale(1.6);
+}
+
+.carouselslide{
+    display: flex;
+    width: 450px;
+    position: relative;
+    top: 2200px;
+    left: 700px;
+}
+.linha{
+    background-color: #09ca03;
+    display: flex;
+}
+.st0
+{
+    height: 170vh;
+    width: 0.5vw;
+	position : absolute ;
+	top : 800px;
+    left: -30px;
+}
+.st1
+{
+    height: 0.8vh;
+    width: 50vw;
+	position : absolute ;
+	top : 70px;
+    left: -20px;
+}
+.st2
+{
+    height: 0.8vh;
+    width: 50vw;
+	position : absolute ;
+	left : 30px;
+	top : 950px;
+}
+.st3
+{
+    height: 0.8vh;
+    width: 50vw;
+	position : absolute ;
+	left : -70px;
+	top : 990px;
+}
+.frame{
+    display: flex;
+}
+.fr1 {
+    position: relative;
+    height: 350px;
+    width: 450px;
+    top: 97px;
+    left: 575px;
+}
+.wide {
+    position: relative;
+    top: -335px;
+    left: -20px;
+    height: 530px;
+    width: 385px;
+}
